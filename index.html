@@ -2,98 +2,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#050816">
-  <title>TENTOX | Social Access Hub</title>
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      min-height: 100vh;
-      padding: 35px 18px;
-      background: radial-gradient(circle at top, #10234a, #050816 55%);
-      color: #fff;
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .container {
-      width: 100%;
-      max-width: 460px;
-      text-align: center;
-    }
-    .logo {
-      font-size: 38px;
-      font-weight: 900;
-      letter-spacing: 7px;
-      color: #55d9ff;
-      text-shadow: 0 0 22px #087cff;
-    }
-    .tagline {
-      color: #9eabc8;
-      font-size: 13px;
-      letter-spacing: 3px;
-      margin: 12px 0 30px;
-    }
-    .panel {
-      background: rgba(13, 25, 52, .88);
-      border: 1px solid #174d83;
-      border-radius: 20px;
-      padding: 25px 20px;
-      box-shadow: 0 0 35px rgba(0, 145, 255, .13);
-    }
-    h2 { font-size: 20px; margin: 0 0 8px; }
-    .description {
-      color: #9eabc8;
-      font-size: 13px;
-      margin-bottom: 23px;
-    }
-    .link {
-      display: block;
-      text-decoration: none;
-      color: white;
-      background: #101f3d;
-      border: 1px solid #24517c;
-      border-radius: 12px;
-      padding: 15px;
-      margin: 11px 0;
-      font-weight: bold;
-      transition: .2s;
-    }
-    .link:hover {
-      background: #123d68;
-      border-color: #55d9ff;
-      transform: translateY(-2px);
-    }
-    footer {
-      margin-top: 22px;
-      color: #7184a8;
-      font-size: 11px;
-      letter-spacing: 2px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#070b18">
+<title>TENTOX | Connect Without Limits</title>
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;
+ font-family:Arial,sans-serif;
+ background:linear-gradient(145deg,#070b18,#101b38);
+ color:#fff;
+ min-height:100vh;
+}
+header{
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ padding:22px 7%;
+ border-bottom:1px solid #243353;
+}
+.logo{font-size:27px;font-weight:900;color:#55d9ff;letter-spacing:2px}
+nav a{color:#dce8ff;text-decoration:none;margin-left:20px;font-size:14px}
+.hero{
+ min-height:75vh;
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ align-items:center;
+ text-align:center;
+ padding:60px 20px;
+}
+.tag{
+ color:#55d9ff;
+ border:1px solid #24517c;
+ border-radius:30px;
+ padding:9px 16px;
+ font-size:12px;
+ letter-spacing:2px;
+}
+h1{
+ font-size:clamp(42px,9vw,76px);
+ margin:25px 0 12px;
+ line-height:1.05;
+}
+h1 span{color:#55d9ff}
+.hero p{
+ color:#aab9d5;
+ max-width:550px;
+ line-height:1.8;
+ font-size:16px;
+}
+.actions{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;margin-top:25px}
+.btn{
+ padding:15px 25px;
+ border-radius:10px;
+ text-decoration:none;
+ font-weight:bold;
+}
+.primary{background:#55d9ff;color:#07101d}
+.secondary{border:1px solid #456184;color:white}
+section{
+ max-width:1000px;
+ margin:20px auto;
+ padding:35px 20px;
+ text-align:center;
+}
+section h2{font-size:27px}
+.cards{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+ gap:16px;
+ margin-top:25px;
+}
+.card{
+ background:#111e38;
+ border:1px solid #263b60;
+ padding:25px;
+ border-radius:16px;
+}
+.card h3{color:#55d9ff}
+.card p{color:#aab9d5;line-height:1.7;font-size:14px}
+footer{
+ text-align:center;
+ padding:30px 15px;
+ color:#8292ae;
+ border-top:1px solid #243353;
+ font-size:13px;
+}
+@media(max-width:500px){
+ header{padding:18px 5%}
+ nav a{margin-left:10px;font-size:12px}
+}
+</style>
 </head>
 <body>
-  <main class="container">
-    <div class="logo">TENTOX</div>
-    <div class="tagline">YOUR DIGITAL CONNECTION HUB</div>
 
-    <section class="panel">
-      <h2>Welcome to TENTOX</h2>
-      <p class="description">Choose a platform to connect with the world.</p>
+<header>
+ <div class="logo">TENTOX</div>
+ <nav>
+  <a href="#about">About</a>
+  <a href="#features">Features</a>
+ </nav>
+</header>
 
-      <a class="link" href="https://www.instagram.com/">◎ Instagram</a>
-      <a class="link" href="https://www.facebook.com/">f Facebook</a>
-      <a class="link" href="https://x.com/">𝕏 Twitter / X</a>
-      <a class="link" href="https://www.tiktok.com/">♪ TikTok</a>
-      <a class="link" href="https://www.whatsapp.com/">✆ WhatsApp</a>
-      <a class="link" href="https://imo.im/">◉ IMO</a>
-      <a class="link" href="https://zangi.com/">◆ Zangi</a>
-    </section>
+<main>
+ <div class="hero">
+  <div class="tag">YOUR WORLD. YOUR PEOPLE.</div>
+  <h1>Meet. Share.<br><span>Connect.</span></h1>
+  <p>
+   Welcome to TENTOX — a new social space built for people
+   to express themselves, discover communities and connect
+   with others around the world.
+  </p>
+  <div class="actions">
+   <a class="btn primary" href="#features">Explore TENTOX</a>
+   <a class="btn secondary" href="#about">Discover More</a>
+  </div>
+ </div>
 
-    <footer>POWERED BY TENTOX SYSTEMS</footer>
-  </main>
+ <section id="about">
+  <h2>A New Way to Connect</h2>
+  <p style="color:#aab9d5;line-height:1.8">
+   Your voice matters. Your interests matter. Your community
+   starts here. TENTOX is being built to bring people closer.
+  </p>
+ </section>
+
+ <section id="features">
+  <h2>What Awaits You</h2>
+  <div class="cards">
+   <div class="card">
+    <h3>🌍 Discover</h3>
+    <p>Find new people, interests and communities.</p>
+   </div>
+   <div class="card">
+    <h3>💬 Connect</h3>
+    <p>Build meaningful connections with people.</p>
+   </div>
+   <div class="card">
+    <h3>🚀 Share</h3>
+    <p>Express yourself and share your world.</p>
+   </div>
+  </div>
+ </section>
+</main>
+
+<footer>
+ © 2026 TENTOX. All rights reserved.
+</footer>
+
 </body>
 </html>
